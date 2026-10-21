@@ -48,6 +48,8 @@ Survey-Feedback-Analyzer/
 
 ## Author
 
-**Shanmukh Koyya** — AI Data Analyst portfolio and interview practice  
-GitHub: [shanmukhkoyya](https://github.com/shanmukhkoyya)  
-LinkedIn: [shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)
+**Shanmukh Koyya**  
+Aspiring AI Data Analyst | Python · SQL · Excel · Power BI
+
+- GitHub: [shanmukhkoyya](https://github.com/shanmukhkoyya)
+- LinkedIn: [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)
