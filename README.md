@@ -1,153 +1,54 @@
 # Survey Feedback Analyzer
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=SURVEY%20FEEDBACK%20ANALYZER&fontSize=30&fontColor=ffffff&fontAlignY=40&desc=PYTHON%20%7C%20TEXT%20PROCESSING%20%7C%20DATA%20ANALYSIS&descAlignY=65" width="100%" />
-</p>
+*Notebook walk-through · Python fundamentals · Text cleaning · Descriptive summaries*
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Data_Analysis-00A6A6?style=for-the-badge" />
-</p>
+---
 
-## 1. Project Overview
+### The small problem
 
-Survey Feedback Analyzer is a beginner-level Python project that processes customer feedback comments and ratings.
+Customer comments are free text, while ratings are numeric. This beginner notebook brings those two types of feedback into one simple workflow: collect records, clean comments, calculate rating summaries, and inspect selected word patterns.
 
-The project demonstrates how Python can be used to collect feedback, clean text, calculate rating summaries and explore basic word-based patterns.
+This is a learning exercise—not a production survey platform or a sentiment-analysis model.
 
-It uses a small sample of survey records and allows users to enter additional feedback for analysis.
+## Notebook contents
 
-## 2. Business Problem
-
-Businesses collect customer feedback to understand customer experiences and identify areas that may need improvement.
-
-However, feedback comments are often unstructured text. This project demonstrates a simple Python workflow for preparing comments and summarising ratings and selected keywords.
-
-## 3. Project Objectives
-
-- Store survey records using Python data structures.
-- Accept additional feedback through user input.
-- Clean text by standardising case and removing selected punctuation.
-- Calculate the average customer rating.
-- Count feedback entries containing selected keywords.
-- Identify the longest comment by word count.
-- Find unique words in the cleaned feedback.
-- Sort feedback records by rating.
-
-## 4. Project Dataset
-
-The notebook starts with 10 sample feedback records.
-
-Each record includes:
-
-- Customer name.
-- Feedback comment.
-- Rating from 1 to 5.
-
-Users can optionally add more feedback records when executing the notebook.
-
-## 5. Project Workflow
-
-### Step 1 — Feedback Collection
-
-- Use the initial sample feedback records.
-- Allow additional records through user input.
-- Store feedback using Python lists and dictionaries.
-
-### Step 2 — Text Cleaning
-
-- Convert comments to lowercase.
-- Remove selected punctuation.
-- Remove leading and trailing spaces.
-- Collapse repeated spaces.
-
-### Step 3 — Rating Analysis
-
-- Calculate the average rating.
-- Compare ratings across feedback records.
-- Sort records based on rating.
-
-### Step 4 — Text Analysis
-
-- Count entries containing selected keywords.
-- Calculate comment word counts.
-- Identify the longest comment.
-- Extract unique words from cleaned feedback.
-
-### Step 5 — Results Review
-
-- Display cleaned comments.
-- Review rating summaries.
-- Examine keyword counts and text summaries.
-
-## 6. Analysis Outputs
-
-| Analysis | Purpose |
+| Notebook operation | What it demonstrates |
 |---|---|
-| Average Rating | Calculate the average of submitted ratings |
-| Keyword Counts | Count feedback entries containing selected words |
-| Longest Comment | Identify the comment with the highest word count |
-| Unique Words | Explore distinct words in cleaned feedback |
-| Rating Sort | Arrange feedback records by rating |
+| Collect records | Lists, dictionaries and user input |
+| Clean comments | Lowercasing, punctuation removal and whitespace handling |
+| Summarise ratings | Average calculation and sorting |
+| Inspect words | Selected keyword counts and unique words |
+| Compare comment length | Word counts and longest-comment identification |
 
-## 7. Python Concepts Demonstrated
+## Input data
 
-| Concept | Application |
-|---|---|
-| Lists | Store feedback records |
-| Dictionaries | Organise customer information |
-| Input Handling | Accept additional feedback |
-| Loops | Process multiple records |
-| Conditions | Apply keyword and rating checks |
-| String Methods | Clean and standardise text |
-| Functions | Organise reusable logic |
-| Sets | Identify unique words |
-| zip() | Combine related collections |
-| Sorting | Order feedback by rating |
-| Average Calculation | Summarise ratings |
+The notebook begins with **10 sample feedback records**. Each record contains a customer name, a comment and a rating from 1 to 5. During execution, the user may add more records.
 
-## 8. Project File
+## Open the notebook
 
-| File | Description |
-|---|---|
-| [Survey Feedback Analyzer Notebook](Survey_Feedback_Analyzer.ipynb) | Python code, input handling and analysis |
-| [.gitignore](.gitignore) | Excludes common local files |
+**[Survey_Feedback_Analyzer.ipynb](Survey_Feedback_Analyzer.ipynb)**
 
-## 9. How to Run the Project
+The notebook is the primary deliverable. It contains the Python examples and analysis steps.
 
-**Prerequisite:** Python and Jupyter Notebook, JupyterLab or Google Colab.
+## Run it
 
-1. Clone or download this repository.
-2. Open `Survey_Feedback_Analyzer.ipynb`.
-3. Run the notebook cells in order.
-4. When asked how many additional feedback records to add, enter `0` to use only the original 10 records.
-5. Otherwise, provide the requested name, comment and rating from 1 to 5.
-6. Review the cleaned feedback and analysis outputs.
+Install Jupyter, start the notebook interface, open Survey_Feedback_Analyzer.ipynb and run the cells in order. At the prompt for additional feedback records, enter 0 to work with only the original 10 examples. Otherwise, enter the requested name, comment and rating.
 
-## 10. Scope and Limitations
+## Concepts practised
 
-- The project uses a small sample of survey records.
-- Keyword counts only identify selected whole words.
-- Keyword matching is not a comprehensive sentiment-analysis method.
-- The longest comment is identified using word count.
-- Average ratings depend on the records entered during execution.
-- The project does not use machine learning or natural-language-processing sentiment models.
+Lists · dictionaries · loops · conditions · string methods · functions · sets · zip() · sorting · average calculation
 
-## 11. Project Structure
+## How to interpret the output
 
-```text
-survey-feedback-analyzer/
-│
-├── Survey_Feedback_Analyzer.ipynb
-├── README.md
-└── .gitignore
-```
+- The average rating changes when additional records are entered.
+- Keyword counts identify selected words; they do not understand full sentence meaning.
+- A comment can contain a positive and a negative idea even when a selected keyword appears.
+- The longest comment is selected by word count, not by usefulness or sentiment.
 
-## 12. Author
+## Limits of this exercise
 
-**Shanmukh Koyya**
+The sample is small. Keyword matching is not comprehensive sentiment analysis, and the notebook does not use machine learning or natural-language-processing models. The results are useful for practising Python operations, not for making business decisions about customer satisfaction.
 
-- **GitHub:** [shanmukhkoyya](https://github.com/shanmukhkoyya)
-- **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)
-- **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)
+---
+
+**Author:** Shanmukh Koyya · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/) · [Email](mailto:shanmukhkoyya1234@gmail.com)
